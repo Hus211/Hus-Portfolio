@@ -10,6 +10,7 @@
 </head>
 </body>
 <div id="header">
+    <img src="./images/background-2.jpeg" alt="husback" class="husback"/>
     <div class="container">
         <nav>
             <img src="images/logo-3.jpg.avif" class="logo">
@@ -17,11 +18,9 @@
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">My Work</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Data Scientist</p>
@@ -34,23 +33,19 @@
     <div class="container">
           <div class="row">
             <div class="about-col-1">
-               <img src="images/IMG888.HEIC">
+               <img src="images/IMG888.HEIC" alt="hus">
             </div>
             <div class="about-col-2">
                <h1 class="sub-title">About Me</h1>
-               <p>Professional with a focus on results who holds a bachelor's degree in economics and finance and is skilled in Web development, R, Python, JavaScript and React. 
-                Possesses hands-on experience in Python and a solid understanding of machine learning concepts, able to do in-depth analysis, analyze and collect data, and provide solutions.
-                Passionate about using data to enhance operations and drive organizational success. strong interpersonal and teamwork skills. I'm also good at coming up with entrepreneurial concepts. 
-                I am aware of how important it is to spot fresh prospects and cultivate enduring client connections. Seeking to leverage my financial knowledge,
-                technical skills, and passion for data analysis to provide valuable insights and drive business decision-making as a Data Scientist. 
-                Committed to continuous learning and growth in the dynamic field of data science.</p>
+               <p>
+                Economics and Finance graduate skilled in Web development, Python, machine learning, and data analysis. Passionate about utilizing data to enhance business outcomes. Strong interpersonal skills with a knack for generating entrepreneurial ideas. Seeking role as a Data Scientist to optimize operations and cultivate client connections. Committed to ongoing development in data science.</p>
   
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links active-link hoverAnimation">Skills</p>
+                    <p class="tab-links hoverAnimation">Experience</p>
+                    <p class="tab-links hoverAnimation">Education</p>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+                <div class="tab-contents active-tab" id="Skills">
                     <ul>
                         <li><span>Data Science/Data Analysis</span><br>Project Creation</li>
                         <li><span>Machine Learning</span><br>Engineer</li>
@@ -58,15 +53,15 @@
                         <li><span>Finance</span><br>Finance management</li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="experience">
+                <div class="tab-contents" id="Experience">
                     <ul>
-                        <li><span>Aug 2023 - Current</span><br>Data Science Intern at blooomberg philanthropies</li>
+                        <li><span>Aug 2023 - Current</span><br>Data Science Intern at bloomberg philanthropies</li>
                         <li><span>Feb 2023 - Apr 2023</span><br>Business admin intern at Seeka Technology</li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="education">
+                <div class="tab-contents" id="Education">
                     <ul>
-                        <li><span>2024</span><br>BA in Finance from Xiamen University Malaysia.</li>
+                        <li><span>2024</span><br>BA(honors) in Finance from Xiamen University Malaysia.</li>
                         <li><span>2023</span><br>Machine learning Certification from Udemy</li>
                         <li><span>2023</span><br>Web development Certification from Udemy</li>
                         <li><span>2023</span><br>Python Programming Certification from Udemy</li>
@@ -76,25 +71,6 @@
         </div>
     </div>
 </div>
-
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classlist.remove("active-link");
-        }
-        for(tablink of tabcontent){
-            tabcontent.classlist.remove("active-tab");
-        }
-        event.currentTarget.classlist.add("active-link");
-        document.getElementById(tabname).classlist.add("active-tab");
-    }
-
-
-</script>
 
 <!-- ----------services------------ -->
 <div id="services">
@@ -106,28 +82,24 @@
                 <h2>Web Design</h2>
                 <p>Specialising in developing user-friendly and aesthetically pleasing websites. Knowledgeable about JavaScript, HTML, and CSS to guarantee a smooth and engaging user experience. 
                     A focus on responsive design to make sure your website looks fantastic across a range of devices.</p>
-                <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-crop"></i>
                 <h2>Finance Management</h2>
                 <p>Proficiency in financial analysis and planning to maximise available funds.
                     Putting forecasting and budgeting techniques into practice. Tracking and analysing financial performance with the use of financial tools and software.</p>
-                <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h2>Data Science</h2>
                 <p>Using data to generate insightful insights and support well-informed decision-making adept in data visualisation, machine learning, and statistical analysis. 
                     Familiarity with frameworks such as scikit-learn and TensorFlow, as well as tools like R and Python.</p>
-                <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-brain"></i>
                 <h2>Artificial Intellligence</h2>
                 <p>Creating AI solutions to improve and automate business operations. Specialising in natural language processing and machine learning methods.
                     Putting AI technologies to use to increase productivity and produce original solutions.</p>
-                <a href="#">Learn more</a>
             </div>
         </div>
     </div>
@@ -140,35 +112,31 @@
             <div class="work">
                 <img src="images/work-4.jpg">
                 <div class="layer">
-                    <h3>Web based App</h3>
-                    <p>Created a user-focused, dynamic online application tailored to the unique requirements of SMEs. 
-                        Created a user experience that is responsive and easy to use for seamless navigation. 
-                        Developed a strong backend using web technologies including HTML5, CSS3, JavaScript, and React to manage user interactions and data processing.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>ImageQuest</h3>
+                    <p>a powerful image search engine designed to help users find the visuals they need quickly and efficiently. 
+                        Using advanced algorithms, it scours the web for relevant images based on user-provided keywords or queries.</p>
+                        <a href="https://github.com/Hus211/ImageQuest"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-1.jpg">
                 <div class="layer">
                     <h3>Heart Prediction Classification Model</h3>
-                    <p>Carried out the machine learning project to assist patients in predicting the risk of heart disease by using a variety of models and algorithms to evaluate and comprehend sizable datasets that were downloaded from Kaggle. 
-                        Feature engineering and optimisation approaches were successfully applied to enhance the performance of the model. </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <p>Carried out the machine learning project to assist patients in predicting the risk of heart disease by using a variety of models and algorithms.</p>
+                        <a href="https://github.com/Hus211/Heart-Model-Predict"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-3.jpg">
                 <div class="layer">
-                    <h3>Recommendation system</h3>
-                    <p>Oversaw a data science project that used statistical analysis and data visualisation approaches to extract relevant insights from large, complex datasets—movies—in order to effectively communicate findings and assist consumers in selecting a movie to watch. 
-                        Machine learning was used for classification and predictive analytics.
-
+                    <h3>Financial AI Assistant</h3>
+                    <p>User-friendly chatbot designed to assist with basic financial inquiries. Leveraging machine learning and natural language processing, it responds to user queries with predetermined answers.
                     </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/Hus211/Financial-AI-assistant"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="https://github.com/Hus211" target="_blank" class="btn">See more</a>
     </div>
 </div>
 <!-- ----------contact------------ -->
@@ -202,57 +170,6 @@
         <p>Copyright © Hus. Made By Choolwe Mudenda with <i class="fa-solid fa-heart"></i></p>
     </div>
 </div>
-
-
-
-
-<script>
-
-     var tablinks = document.getElementsByClassName("tab-links");
-     var tabcontents = document.getElementsByClassName("tab-contents");
-
-     function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");          
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currrentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-     }
-
-</script>
-
-<script>
-
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-</script>
-    <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzPbg6hpI7Xv_54WaE0eePpyMPvrljCygDp1uJSIsZ_s7ORxDE6s7D2Eh85lEeW_jb9/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+<script src="./script.js" defer></script>
 </body>
 </html>
